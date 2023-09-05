@@ -10,18 +10,39 @@
   font-weight: bold;
   font-style: normal;
 }
+.color-1 {
+  color: #dfe8f2;
+}
+.color-2 {
+  color: #c6d6eb;
+}
+.color-3 {
+  color: #a9c4e3;
+}
+.color-4 {
+  color: #7ba0d0;
+}
+.color-5 {
+  color: #3975b7;
+}
+.color-6 {
+  color: #275197;
+}
+.color-7 {
+  color: #303f82;
+}
 
 body {
-  background-color: white;
+  background-color: #303f82;
   margin: 0;
   font-family: sans-serif;
+  color: #303f82;
 }
 
 .site-header {
   font-family: "Roboto", sans-serif;
   font-weight: bold;
   padding: 10px;
-  background-color: #ffffff;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -38,21 +59,22 @@ body {
   text-decoration: none;
   font-size: 35px;
   font-weight: bold;
-  color: rgb(0, 0, 0);
+  color: #ffffff;
   margin: 0px 50px 0px 50px;
 }
 
 .site-header div a {
   text-decoration: none;
-  color: rgb(0, 0, 0);
+  color: #ffffff;
   font-size: 20px;
 
   padding: 5px 10px 5px 10px;
-  border: 2px solid rgb(0, 0, 0);
+  border: 2px solid #7ba0d0;
 }
 .site-header div a:hover {
   font-size: 20px;
-  background-color: #d8d8d8;
+  background-color: #a9c4e3;
+  color: #303f82;
 }
 
 #face {
@@ -60,23 +82,24 @@ body {
   max-width: 300px;
   height: auto;
   margin-top: 20px;
+  border-radius: 20px;
 }
 
 .main-header {
   font-family: "Roboto", sans-serif;
   text-align: center;
-  background-color: #d8d8d8;
+  background-color: #a9c4e3;
 }
 .main-header h1 {
   margin-left: 10%;
   margin-right: 10%;
-  color: white;
+  color: #ffffff;
   font-size: 55px;
   margin-bottom: 0;
 }
 
 .main-header h2 {
-  color: #686868;
+  color: #dfe8f2;
   font-size: 30px;
   margin-top: 2px;
   padding-bottom: 20px;
@@ -86,13 +109,21 @@ body {
   display: flex;
   flex-direction: column;
   width: 130px;
+  fill: #dfe8f2;
 }
 .contacts a {
   text-decoration: none;
-  color: black;
+  color: #7ba0d0;
   vertical-align: middle;
 }
 
+#about-me {
+  background-color: #c6d6eb;
+  padding: 15px;
+}
+#about {
+  margin-top: 0px;
+}
 .box {
   vertical-align: middle;
   height: 55px;
@@ -117,8 +148,9 @@ body {
 .skill span {
   display: block;
   padding: 5px;
-  background-color: #d1cdcd;
-  color: #4f4f4f;
+  background-color: #00558d;
+  color: #f7f7f7;
+  border-radius: 5px;
 }
 
 article {
@@ -130,16 +162,25 @@ article {
   padding-right: 50px;
 }
 
+#contacts {
+  margin-left: 50px;
+}
+
+#contacts h2 {
+  color: #dfe8f2;
+  text-align: center;
+}
+
 footer p {
   font-family: "Roboto", sans-serif;
   margin-top: 20px;
   margin-bottom: 0px;
   padding-top: 15px;
   padding-bottom: 15px;
-  background-color: #d8d8d8;
+  background-color: #dfe8f2;
   text-align: center;
   font-size: medium;
-  color: white;
+  color: #303f82;
 }
 
 @media (max-width: 910px) {
@@ -191,5 +232,13 @@ footer p {
     padding-left: 15px;
     padding-right: 15px;
     margin-bottom: 20px;
+  }
+
+  #about {
+    text-align: center;
+  }
+
+  #contacts {
+    margin-left: 0px;
   }
 }
